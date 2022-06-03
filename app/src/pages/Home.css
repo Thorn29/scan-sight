@@ -1,0 +1,26 @@
+.home {
+  position: relative;
+  z-index: 2;
+}
+
+.home__welcome {
+  font-family: var(--font1);
+  font-size: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 90%;
+}
+
+.home__desc {
+  font-family: var(--font2);
+  text-align: center;
+  max-width: 80%;
+  margin: 2rem auto;
+}
+
+.home__error {
+  font-family: var(--font2);
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}

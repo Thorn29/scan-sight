@@ -1,0 +1,48 @@
+.output {
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output.empty {
+  display: none;
+}
+
+.output__text {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+  background: rgba(0,0,0,.7);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: var(--font2);
+  font-size: .9rem;
+  line-height: 1.8rem;
+  color: white;
+}
+
+.output__controls {
+  margin: 1rem 0;
+}
+
+.output__button {
+  width: 10rem;
+  height: 1.6rem;
+  background: var(--secondary);
+  border: 1px solid rgba(0,0,0,.7);
+  cursor: pointer;
+}
+
+.output__button:hover {
+  filter: brightness(80%);
+}
+
+.output__info {
+  font-size: .8rem;
+  font-style: italic;
+}

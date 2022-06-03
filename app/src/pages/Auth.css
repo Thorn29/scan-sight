@@ -1,0 +1,73 @@
+.auth {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  perspective: 9800px;
+}
+
+.auth::after {
+  content: '';
+  display: block;
+  width: 50%;
+  max-width: 200px;
+  margin-top: -150px;
+  border-radius: 50%;
+  height: 180px;
+  background: rgba(0,0,0,.3);
+  filter: blur(25px);
+  transition: .6s;
+}
+
+.auth__window {
+  width: 80%;
+  max-width: 350px;
+  height: 19rem;
+  min-height: 230px;
+  position: relative;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  z-index: 1;
+  transition: .5s;
+}
+
+.auth__window figure {
+  width: 100%;
+  height: 19rem;
+  min-height: 230px;
+  background: radial-gradient(var(--secondary), var(--primary));
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.auth__right {
+  transform-origin: left;
+  transform: translateX(100%) rotateY(90deg);
+}
+
+.auth.switch .auth__window {
+  transform: rotate3d(0,1,0,-90deg);
+}
+
+.auth.switch::after {
+  transform: rotate(180deg);
+}
+
+.auth__change {
+  max-width: 90%;
+  font-family: var(--font2);
+  font-size: .9rem;
+  margin: 0 auto 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.auth__change:hover {
+  color: #444;
+}

@@ -1,0 +1,42 @@
+.form-input {
+  width: 80%;
+  min-width: 200px;
+  position: relative;
+  margin: 15px 0;
+}
+
+.form-input__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  background: none;
+  font-family: var(--font2);
+  position: relative;
+  z-index: 1;
+}
+
+.form-input__label {
+  font-family: var(--font2);
+  color: var(--logo);
+  font-size: .8rem;
+  position: absolute;
+  top: .3rem;
+  left: 2%;
+  transition: .3s;
+}
+
+
+.form-input:focus-within .form-input__label, .form-input__input:not(:placeholder-shown) + label {
+  top: -.7rem;
+  font-size: .6rem;
+}
+
+.form-input__error {
+  font-family: var(--font2);
+  font-size: .6rem;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  bottom: -.9rem;
+  left: 2%;
+}

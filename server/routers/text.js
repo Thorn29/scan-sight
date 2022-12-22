@@ -27,16 +27,13 @@ router.post('/scan', (req, res) => {
           }
 
           let outputData = [];
-          let outputText = [];
 
           for (const c of response.outputs) {
-            outputData.push(c.data.regions);
+            for (const t of c.data.regions) {
+              outputData.push(t.data.text.raw);
+            }
           }
-
-          for (const c of outputData) {
-            outputText.push(c.data.text.raw);
-          }
-          console.log('Yeah, you improved it');
+          
           res.status(200).send(outputData);
       }
   );

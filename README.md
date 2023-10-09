@@ -2,7 +2,7 @@
 
 A small app that scans images for characters, then converts them to plain text, which the user can copy, edit or save.
 
-[See live demo](https://scansight-hidden-production-19dc.up.railway.app)
+[See live demo](https://red-colorful-rabbit.cyclic.cloud)
 
 ## Development
 
